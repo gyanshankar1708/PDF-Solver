@@ -96,3 +96,19 @@ footer a{
   color: #666;
   text-decoration: none;
 }
+
+.checkbox-group {
+  margin-bottom: 20px;
+}
+
+.loading-indicator {
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+.note{
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
