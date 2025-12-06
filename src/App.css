@@ -86,3 +86,13 @@ footer.footer {
   border-top: 1px solid #ddd;
   color: #666;
 }
+
+.api-link {
+  text-align: end;
+  margin-top: 5px;
+}
+
+footer a{
+  color: #666;
+  text-decoration: none;
+}
