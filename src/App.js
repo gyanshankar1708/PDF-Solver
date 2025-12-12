@@ -146,8 +146,14 @@ function App() {
         3. Put the detailed explanation, examples, and key concepts AFTER "ANSWER:".
         4. Do NOT use Markdown (no **bold** or # headings).
         5. Keep it text-only but structured.
-        6. Answer should not exceed ${words} words per question.
-        7. Mention question also after "QUESTION X:" for clarity.
+        6. Include diagrams only if absolutely necessary, using simple text-based representations.
+        7. If you mention key concepts, highlight them in a separate section called "Key Concepts" after the answer.
+        8. Answer should not exceed ${words} words except diagrams and examples per question.
+        9. Mention question also after "QUESTION X:" for clarity.
+        10. Keep answer in simple language.
+
+        Your final output will be used to create a professional PDF document.
+        Ensure clarity, conciseness, and accuracy in your answers.
       `;
 
       // Using Gemini 2.5 Pro (Experimental)
@@ -258,7 +264,7 @@ function App() {
 
             {/* Debug View */}
             <details style={{ marginTop: "20px", color: "#666" }}>
-              <summary>View Raw Text</summary>
+              <summary style={{cursor:"pointer"}}>View Raw Text</summary>
               <pre className="preview-box">{generatedText}</pre>
             </details>
           </div>
